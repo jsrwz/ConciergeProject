@@ -1,0 +1,112 @@
+<!-- login.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+	<style>
+        body {
+			background-image: url('/public/assets/images/login/desktop-wallpaper-login-page-login.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin: 0; /* Remove default body margin */
+			color: #ffffff; /* Change text color to white or any color that suits your background */
+			font-family: 'Arial', sans-serif; /* Specify a font for better visibility */
+			height: 100vh; /* Ensure the body takes the full height of the viewport */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+
+        .login-container {
+            margin-top: 50px;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.8); /* Use an RGBA value to add a semi-transparent background to the login container */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: #333333;
+        }
+
+        .login-form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .form-group input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            width: 80%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <!--welcome-hero start -->
+	<section id="welcome-hero" class="welcome-hero">
+		<div class="container">
+			<div class="row">
+				<!-- Login Form -->
+				<div class="col-md-6 offset-md-3 login-container">
+					<h2>Login</h2>
+                    <% if(messages.error) { %>
+                    <%= messages.error %>
+                    <% } %>
+					<form action="/login" method="POST" class="login-form">
+						<div class="form-group">
+							<label for="username">Username:</label>
+							<input type="text" id="username" name="username" required>
+						</div>
+						<div class="form-group">
+							<label for="password">Password:</label>
+							<input type="password" id="password" name="password" required>
+						</div>
+						<div class="form-group">
+							<button type="submit">Login</button>
+						</div>
+					</form>
+                    <div class="misafir">
+                        <button class="misafirGiris">If you're a guest at our hotel,press this.</button>
+                    </div>
+				</div>
+				<!-- End Login Form -->
+			</div><!-- /.row-->
+		</div><!-- /.container-->
+	</section><!--/.welcome-hero end-->
+    <script>
+        const misafirGirisButton = document.querySelector('.misafirGiris')
+        misafirGirisButton.addEventListener('click' , () => {
+            window.location = 'http://127.0.0.1:3000/index'
+        })
+    </script>
+</body>
+</html>

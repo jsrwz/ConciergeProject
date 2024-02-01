@@ -1,0 +1,951 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>DoubleTree by Hilton Moda</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="/public/assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="/public/assets/css/font-awesome.min.css">
+
+		<!--flat icon css-->
+		<link rel="stylesheet" href="/public/assets/css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="/public/assets/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="/public/assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="/public/assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="/public/assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="/public/assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="/public/assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="/public/assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+		<style>
+			.modals{
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%) scale(0);
+				transition: 200ms ease-in-out;
+				/* border: 1px solid yellow; */
+				border-radius: 10px;
+				background-color: #3498db;
+				z-index: 10;
+				width: 700px;
+				max-width: 80%;
+			}
+
+			.modals.active {
+				transform: translate(-50%, -50%) scale(1);
+			}
+
+			.modals-header{
+				padding: 10px 15px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.modals-header .title{
+				font-size: 1.25rem;
+				font-weight: bold;
+				color: aliceblue; 
+				font-size: larger;
+			}
+
+			.modals-header .close-button{
+				cursor: pointer;
+				border: none;
+				outline: none;
+				background: none;
+				font-size: 1.25rem;
+				font-weight: bold;
+			}
+
+			.modals-body {
+				padding: 10px 15px;
+			}
+
+			.modals-body form{
+				color: black;
+			}
+		</style>
+		
+    </head>
+	
+	<body>
+		
+		<!-- top-area Start -->
+		<header class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+
+			        <div class="container">
+
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <a class="navbar-brand" href="">DoubleTree By Hilton Moda</a>
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                <li class=" smooth-menu active"></li>
+			                    <li class=" smooth-menu"><a href="#aboutus">About our hotel</a></li>
+			                    <li class=" smooth-menu"><a href="#transportation">Transportation</a></li>
+			                    <li class="smooth-menu"><a href="#resteraunts">Resteraunts</a></li>
+			                    <li class="smooth-menu"><a href="#myReservations">Reservations</a></li>
+			                    <li class="smooth-menu"><a href="#profiles">profile</a></li>
+			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+
+		    <div class="clearfix"></div>
+
+		</header><!-- /.top-area-->
+		<!-- top-area End -->
+	
+		<!--welcome-hero start -->
+		<section id="welcome-hero" class="welcome-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="header-text">
+							<h2>Welcome <span>,</span> to our <br> hotel <span>.</span>   </h2>
+							<p>all information you need about the area and İstanbul</p>
+							<a href="https://www.hilton.com/en/hotels/istimdi-doubletree-istanbul-moda/?WT.mc_id=zINDA0EMEA1MB2PSH3GGL4INTBPP5dkt6MULTIBR7_121127567_1003528_p22391806859&&&gclid=CjwKCAjwgsqoBhBNEiwAwe5w00TOTUJ6hGAv5bFCJwpuusoEGkm1EkBLHCWt6D9FCROf7i8i3gVeZhoCnu4QAvD_BwE&gclsrc=aw.ds" target="_blank">Check our website</a>
+						</div><!--/.header-text-->
+					</div><!--/.col-->
+				</div><!-- /.row-->
+			</div><!-- /.container-->
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--about start -->
+		<section id="aboutus" class="about">
+			<div class="section-heading text-center">
+				<h2>about our hotel</h2>
+			</div>
+			<div class="container">
+				<div class="about-content">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="single-about-txt">
+								<h3>
+									Our facilities
+								</h3>
+								<br>
+								<ul>
+									<li class="forborder">
+										<img class="card-img-top"  src="https://www.hilton.com/im/en/ISTIMDI/14724685/dsc01900.jpg?impolicy=crop&cw=6527&ch=3654&gravity=NorthWest&xposition=0&yposition=570&rw=768&rh=430" alt="outdoor pool">
+										<p>Outdoor pool with a stunning view <br>
+                                            Floor : 12 , take the single elevator for it. <br>
+                                            Open at 07:00 am closed at 07.00 pm
+                                        </p>
+									</li>
+                                    <br><br>
+                                    <li class="forborder">
+										<img src="https://www.hilton.com/im/en/ISTIMDI/14724661/dsc-2897acik.jpg?impolicy=crop&cw=5000&ch=2799&gravity=NorthWest&xposition=0&yposition=261&rw=768&rh=430" alt="hood rooftop">
+										<p>Hood Rooftop/Bar,international resteraunt with amazing food and a stunning view <br>
+                                            Floor : 12 , take the double elevator for it. <br>
+                                            Open at 03.00 pm closed at 11.00 pm
+                                        </p>
+									</li>
+									<br><br>
+									<li class="forborder">
+										<img src="/public/assets/images/about/conference.jpg" alt="conferencerooms">
+										<p>Conference rooms for meetings<br>
+                                            Floor : 1 and 2 , take the single elevator for it. <br>
+                                            Depends on your timings.
+                                        </p>
+									</li>
+									<br><br>
+                                    <li class="forborder">
+										<img src="/public/assets/images/about/lagazetta.jpg" alt="lagazetta" style="width: 750px;">
+										<p>Lagazetta Cafe/Bar,Mostly for drinks.<br>
+                                            Floor : 0 , At the lobby<br>
+                                            Always open
+                                        </p>
+									</li>
+                                    <br><br>
+									<li class="forborder">
+										<img src="/public/assets/images/about/spa.jpg" alt="spa" style="width: 750px; height: 425px;">
+										<p>Qualia welness/spa <br>
+                                            Floor : -1 , take the single elevator for it. <br>
+                                            Open at 07.00 am closed at 11.00 pm
+                                        </p>
+									</li>
+                                    <br><br>
+									<li class="forborder">
+										<img src="/public/assets/images/about/gym.jpg" alt="gym">
+										<p>A gym with high quality equipments<br>
+                                            Floor : -1 , take the single elevator for it. <br>
+                                            Its always open
+                                        </p>
+									</li>
+                                    <br><br>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/.about-->
+		<!--about end -->
+		
+		<!--transportation start -->
+		<section id="transportation" class="transportation">
+			<div class="section-heading text-center">
+				<h2>Transportation options</h2>
+			</div>
+			<div class="container">
+				<div class="transportation">
+					<div class="row">
+						<div class="col-sm-8">
+								<div class="timeline">
+									<div class="timeline-content">
+										<h3 class="title">
+											Hotels VIP Transport
+										</h3>
+										<br>
+										<h4 class="opts">Sabiha Gökçen Airport</h4>
+										<p class="description" style="text-align: justify;">
+											8+1 people with 5 luggages<span style="float: right;">Price : 120 euros + tax</span> 
+										</p>
+										<button class="rezerv" id="sabiha_vip" type="button" class="btn btn-primary">Make reservation</button>
+										<div class="modals" id="sabiha_vip_modal">
+											<div class="modals-header">
+												<div class="title">Sabiha Gökçen VIP Reservation</div>
+												<button id="sabiha_vip_close" class="close-button">&times;</button>
+											</div>
+											<div class="modals-body">
+												<form class="reservationForm form1" >
+													<div class="form-group">
+														<label for="roomNumber">Your room number:</label>
+														<input type="text" id="roomNumber" name="roomNumber" required>
+													</div>
+													<div class="form-group">
+														<label for="name">Your name:</label>
+														<input type="text" id="name" name="name" required>
+													</div>
+													<div class="form-group">
+														<label for="saat">The time of the arrival:(00.00)</label>
+														<input type="text" id="saat" name="saat" required>
+													</div>
+													<div class="form-group">
+														<label for="tarih">The date of the arrival:(day.month)</label>
+														<input type="text" id="tarih" name="tarih" required>
+													</div>
+													<div class="form-group">
+														<label for="note">Your note:</label>
+														<input type="text" id="note" name="note">
+													</div>
+													<div class="form-group">
+														<button type="submit" class="addReservation">Make Reservation</button>
+													</div>
+												</form>
+											</div>
+										</div>
+										<br>
+										<h4 class="opts">Istanbul Airport</h4>
+										<p class="description" style="text-align: justify;">
+											8+1 people with 5 luggages<span style="float: right;">Price : 150 euros + tax</span> 
+										</p>
+										<button class="rezerv" id="ist_vip" type="button" class="btn btn-primary">Make reservation</button>
+										<div class="modals" id="ist_vip_modal">
+											<div class="modals-header">
+												<div class="title">Istanbul Airport VIP Reservation</div>
+												<button id="ist_vip_close" class="close-button">&times;</button>
+											</div>
+											<div class="modals-body">
+												<form class="reservationForm form2" >
+													<div class="form-group">
+														<label for="roomNumber">Your room number:</label>
+														<input type="text" id="roomNumber" name="roomNumber" required>
+													</div>
+													<div class="form-group">
+														<label for="name">Your name:</label>
+														<input type="text" id="name" name="name" required>
+													</div>
+													<div class="form-group">
+														<label for="saat">The time of the arrival:(00.00)</label>
+														<input type="text" id="saat" name="saat" required>
+													</div>
+													<div class="form-group">
+														<label for="tarih">The date of the arrival:(day.month)</label>
+														<input type="text" id="tarih" name="tarih" required>
+													</div>
+													<div class="form-group">
+														<label for="note">Your note:</label>
+														<input type="text" id="note" name="note">
+													</div>
+													<div class="form-group">
+														<button type="submit" class="addReservation">Make Reservation</button>
+													</div>
+												</form>
+											</div>
+										</div>
+										<br>
+										<h4 class="opts">Daily usage by hours:</h4>
+										<p class="description" style="text-align: justify;">
+											8+1 people with 5 luggages<span style="float: right;">Price : 4 hours : 200 euros</span> 
+										</p>
+                                        <button class="rezerv" id="daily_vip" type="button" class="btn btn-primary">Make reservation</button>
+										<div class="modals" id="daily_vip_modal">
+											<div class="modals-header">
+												<div class="title">Daily VIP Transportation Reservation</div>
+												<button id="daily_vip_close" class="close-button">&times;</button>
+											</div>
+											<div class="modals-body">
+												<form class="reservationForm form3">
+													<div class="form-group">
+														<label for="roomNumber">Your room number:</label>
+														<input type="text" id="roomNumber" name="roomNumber" required>
+													</div>
+													<div class="form-group">
+														<label for="name">Your name:</label>
+														<input type="text" id="name" name="name" required>
+													</div>
+													<div class="form-group">
+														<label for="saat">The time of the arrival:(00.00)</label>
+														<input type="text" id="saat" name="saat" required>
+													</div>
+													<div class="form-group">
+														<label for="tarih">The date of the arrival:(day.month)</label>
+														<input type="text" id="tarih" name="tarih" required>
+													</div>
+													<div class="form-group">
+														<label for="destination">Destination:</label>
+														<input type="text" id="destination" name="destination" required>
+													</div>
+													<div class="form-group">
+														<label for="note">Your note:</label>
+														<input type="text" id="note" name="note">
+													</div>
+													<div class="form-group">
+														<button type="submit" class="addReservation">Make Reservation</button>
+													</div>
+												</form>
+											</div>
+										</div>
+										<div class="single-horizontal-timeline">
+											<div class="timeline-horizontal-border">
+												<i class="fa fa-circle" aria-hidden="true"></i>
+												<span class="single-timeline-horizontal"></span>
+											</div>	
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="timeline">
+								<div class="timeline-content">
+									<h3 class="title">
+										Taxi Transportation
+									</h3>
+									<br>
+									<h4 class="opts">Sabiha gökçen airport</h4>
+									<p class="description" style="text-align: justify;">
+                                        It takes around +50mins<span style="float: right;">Price : 800-1000 tl</span> 
+                                    </p>
+									<button class="rezerv" id="sabiha_taxi" type="button" class="btn btn-primary">Make reservation</button>
+									<div class="modals" id="sabiha_taxi_modal">
+										<div class="modals-header">
+											<div class="title">Sabiha Gökçen Taxi Reservation</div>
+											<button id="sabiha_taxi_close" class="close-button">&times;</button>
+										</div>
+										<div class="modals-body">
+											<form class="reservationForm form4" >
+												<div class="form-group">
+													<label for="roomNumber">Your room number:</label>
+													<input type="text" id="roomNumber" name="roomNumber" required>
+												</div>
+												<div class="form-group">
+													<label for="name">Your name:</label>
+													<input type="text" id="name" name="name" required>
+												</div>
+												<div class="form-group">
+													<label for="saat">The time of the arrival:(00.00)</label>
+													<input type="text" id="saat" name="saat" required>
+												</div>
+												<div class="form-group">
+													<label for="tarih">The date of the arrival:(day.month)</label>
+													<input type="text" id="tarih" name="tarih" required>
+												</div>
+												<div class="form-group">
+													<label for="note">Your note:</label>
+													<input type="text" id="note" name="note">
+												</div>
+												<div class="form-group">
+													<button type="submit" class="addReservation">Make Reservation</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<br>
+									<h4 class="opts">İstanbul Airport</h4>
+									<p class="description" style="text-align: justify;">
+                                        It takes around +80mins<span style="float: right;">Price : 900-1200 tl</span> 
+                                    </p>
+									<button class="rezerv" id="ist_taxi" type="button" class="btn btn-primary">Make reservation</button>
+									<div class="modals" id="ist_taxi_modal">
+										<div class="modals-header">
+											<div class="title">İstanbul Airport Taxi Reservation</div>
+											<button id="ist_taxi_close" class="close-button">&times;</button>
+										</div>
+										<div class="modals-body">
+											<form class="reservationForm form5" >
+												<div class="form-group">
+													<label for="roomNumber">Your room number:</label>
+													<input type="text" id="roomNumber" name="roomNumber" required>
+												</div>
+												<div class="form-group">
+													<label for="name">Your name:</label>
+													<input type="text" id="name" name="name" required>
+												</div>
+												<div class="form-group">
+													<label for="saat">The time of the arrival:(00.00)</label>
+													<input type="text" id="saat" name="saat" required>
+												</div>
+												<div class="form-group">
+													<label for="tarih">The date of the arrival:(day.month)</label>
+													<input type="text" id="tarih" name="tarih" required>
+												</div>
+												<div class="form-group">
+													<label for="note">Your note:</label>
+													<input type="text" id="note" name="note">
+												</div>
+												<div class="form-group">
+													<button type="submit" class="addReservation">Make Reservation</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<br>
+									<h4 class="opts">Daily usage</h4>
+									<p class="description" style="text-align: justify;">
+                                        Depends on where you want to go<span style="float: right;">Price : Depends on the way</span> 
+                                    </p>
+                                    <button class="rezerv" id="daily_taxi" type="button" class="btn btn-primary">Make reservation</button>
+									<div class="modals" id="daily_taxi_modal">
+										<div class="modals-header">
+											<div class="title">Daily Taxi Reservation</div>
+											<button id="daily_taxi_close" class="close-button">&times;</button>
+										</div>
+										<div class="modals-body">
+											<form class="reservationForm form6">
+												<div class="form-group">
+													<label for="roomNumber">Your room number:</label>
+													<input type="text" id="roomNumber" name="roomNumber" required>
+												</div>
+												<div class="form-group">
+													<label for="name">Your name:</label>
+													<input type="text" id="name" name="name" required>
+												</div>
+												<div class="form-group">
+													<label for="saat">The time of the arrival:(00.00)</label>
+													<input type="text" id="saat" name="saat" required>
+												</div>
+												<div class="form-group">
+													<label for="tarih">The date of the arrival:(day.month)</label>
+													<input type="text" id="tarih" name="tarih" required>
+												</div>
+												<div class="form-group">
+													<label for="destination">Destination:</label>
+													<input type="text" id="destination" name="destination" required>
+												</div>
+												<div class="form-group">
+													<label for="note">Your note:</label>
+													<input type="text" id="note" name="note">
+												</div>
+												<div class="form-group">
+													<button type="submit" class="addReservation">Make Reservation</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="single-horizontal-timeline">
+										<div class="timeline-horizontal-border">
+											<i class="fa fa-circle" aria-hidden="true"></i>
+											<span class="single-timeline-horizontal"></span>
+										</div>	
+								</div><!--/.timeline-content-->
+							</div><!--/.timeline-->
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="timeline">
+							<div class="timeline-content">
+								<h3 class="title">
+									About Public Transportation
+								</h3>
+								<br>
+								<h4>İstanbul card</h4>
+								<p class="description">
+									You need istanbul card to use the public transportation,you can get it from the yellow machines at the fery station,subway station.We recommend you to get the red one.
+								</p>
+								<br>
+								<h4>Fery</h4>
+								<p class="description">
+									Its 6 minutes walk away from our hotel,you can go to Üsküdar,Bostancı at this side or you can go to the other side using the fery. 
+								</p>
+								<br>
+								<h4>Subway</h4>
+								<p class="description">
+									Its more crowded but faster.
+								</p>
+								<div class="single-horizontal-timeline">
+									<div class="timeline-horizontal-border">
+										<i class="fa fa-circle" aria-hidden="true"></i>
+										<span class="single-timeline-horizontal"></span>
+									</div>	
+							</div><!--/.timeline-content-->
+						</div><!--/.timeline-->
+					</div>
+				</div>
+					</div>
+				</div>
+			</div>
+			<br><br>
+		</section><!--/.transportation-->
+
+		<!--transportation end -->
+
+		<!--resteraunts around start -->
+		<section id="resteraunts" class="resteraunts">
+			<div class="section-heading text-center">
+				<h2>Resteraunts around</h2>
+			</div>
+			<div class="container">
+				<div class="about-content">
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="single-about-txt">
+								<h3>
+									Turkish food
+								</h3>
+								<br>
+								<ul>
+									<li>
+										<img src="/public/assets/images/resteraunts/ciyasofrasi.jpg" alt="ciyasofrasi">
+										<p>Ciya sofrasi with good meat,sides might be crowded.  
+											<br>
+											Its 6,7 minutes walk from here
+										</p>
+									</li>
+									<li>
+										<img src="/public/assets/images/resteraunts/siraz.jpg" alt="siraz">
+										<p>Şiraz resteraunt with good meat,sides and a lovely cute place.
+											<br>
+											Its 5,6 minutes walk from here
+										</p>
+									</li>
+								</ul>
+								<br>
+								<h3>
+									International food
+								</h3>
+								<br>
+								<ul>
+									<li>
+										<img src="/public/assets/images/resteraunts/veganarsist.jpg" alt="ciyasofrasi" style="width: 750px;">
+										<p>Veganarsist with good vegan food,they have daily menu.  
+											<br>
+											Its 10 minutes walk from here
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/.resteraunts around-->
+		<!--resteraunts around end -->
+
+		<!--reservations start -->
+		<section id="myReservations" class="myReservations">
+			<div class="container">
+				<div class="about-content">
+					<div class="section-heading text-center">
+						<h2>Reservations</h2>
+					</div>
+					<div class="row">
+						<h3 style="margin: 5px; padding-left: 12px; padding-top: 10px; padding-bottom: 0%;">Your reservations</h3>
+					</div>
+					<div class="row">
+						<div class="col-md-5 col-sm-6">
+							<div class="single-reservation-box">
+								<div class="reservation-form">
+									<form class="myReservationsForm">
+										<div class="row">
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+													<input type="text" id="reservationName" class="form-control" placeholder="Name*" name="reservationName" required>
+												</div>
+											</div> 
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+													<input type="text" id="reservationRoomNumber" class="form-control" placeholder="Room Number*" name="reservationRoomNumber" required>
+												</div>
+											</div> 
+										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="single-reservation-btn">
+													<button type="submit" class="searchReservation ">Search Your Reservations</button>
+												</div>
+											</div> 
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8">
+							<br>
+							<h3 style="margin-top: 20px;">Reservations List</h3>
+							<table id="reservationTable">
+								<thead>
+									<tr>
+									  <th>ID</th>
+									  <th>RoomNumber</th>
+									  <th>Name</th>
+									  <th>Type</th>
+									  <th>Tarih</th>
+									  <th>Saat</th>
+									  <th>Destination</th>
+									  <th>Not</th>
+									  <th>Status</th>
+									</tr>
+								  </thead>
+								  <tbody>
+									<!-- Rows will be added dynamically -->
+								  </tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--reservations end -->
+
+		<!--profiles start -->
+		<section id="profiles" class="profiles">
+			<div class="profiles-details">
+				<div class="section-heading text-center">
+					<h2>profiles</h2>
+				</div>
+				<div class="container">
+					<div class="profiles-content">
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-themeforest"></i></a>
+										<div class="profile-icon-name">themeforest</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-themeforest"></i></a>
+											<div class="profile-icon-name">themeforest</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-dribbble"></i></a>
+										<div class="profile-icon-name">dribbble</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-dribbble"></i></a>
+											<div class="profile-icon-name">dribbble</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-behance-logo"></i></a>
+										<div class="profile-icon-name">behance</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-behance-logo"></i></a>
+											<div class="profile-icon-name">behance</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile profile-no-border">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-github-logo"></i></a>
+										<div class="profile-icon-name">github</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-github-logo"></i></a>
+											<div class="profile-icon-name">github</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="profile-border"></div>
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-flickr-website-logo-silhouette"></i></a>
+										<div class="profile-icon-name">flickR</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-flickr-website-logo-silhouette"></i></a>
+											<div class="profile-icon-name">flickR</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-smug"></i></a>
+										<div class="profile-icon-name">smungMung</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-smug"></i></a>
+											<div class="profile-icon-name">smungMung</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-squarespace-logo"></i></a>
+										<div class="profile-icon-name">squareSpace</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-squarespace-logo"></i></a>
+											<div class="profile-icon-name">squareSpace</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="single-profile profile-no-border">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
+										<div class="profile-icon-name">bitBucket</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
+											<div class="profile-icon-name">bitBucket</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section><!--/.profiles-->
+		<!--profiles end -->
+
+		<!--contact start -->
+		<section id="contact" class="contact">
+			<div class="section-heading text-center">
+				<h2>contact me</h2>
+			</div>
+			<div class="container">
+				<div class="contact-content">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-form">
+									<form>
+										<div class="row">
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="single-contact-btn">
+													<a class="contact-btn" href="#" role="button">submit</a>
+												</div><!--/.single-single-contact-btn-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+									</form><!--/form-->
+								</div><!--/.contact-form-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-adress">
+									<div class="contact-add-head">
+										<h3>browny star</h3>
+										<p>uI/uX designer</p>
+									</div>
+									<div class="contact-add-info">
+										<div class="single-contact-add-info">
+											<h3>phone</h3>
+											<p>987-123-6547</p>
+										</div>
+										<div class="single-contact-add-info">
+											<h3>email</h3>
+											<p>browny@info.com</p>
+										</div>
+										<div class="single-contact-add-info">
+											<h3>website</h3>
+											<p>www.brownsine.com</p>
+										</div>
+									</div>
+								</div><!--/.contact-adress-->
+								<div class="hm-foot-icon">
+									<ul>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-dribbble"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li><!--/li-->
+										<li><a href="#"><i class="fa fa-instagram"></i></a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-icon-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.contact-content-->
+			</div><!--/.container-->
+
+		</section><!--/.contact-->
+		<!--contact end -->
+
+		<!--footer-copyright start-->
+		<footer id="footer-copyright" class="footer-copyright">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<p>
+						&copy; designed by <a href="https://www.themesine.com/">themesine</a>
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" ></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-copyright-->
+		<!--footer-copyright end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="/public/assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="/public/assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="/public/assets/js/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="/public/assets/js/jquery.sticky.js"></script>
+		
+		<!-- for progress bar start-->
+
+		<!-- progressbar js -->
+		<script src="/public/assets/js/progressbar.js"></script>
+
+		<!-- appear js -->
+		<script src="/public/assets/js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="/public/assets/js/owl.carousel.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="/public/assets/js/custom.js"></script>
+
+		<script type="module" src="/public/assets/script/reservation.js"></script>
+		<script type="module" src="/public/assets/script/myReservation.js"></script>
+
+    </body>
+	
+</html>
